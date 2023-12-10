@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blendin</title>
+    <link rel="stylesheet" href="styles.css">
     <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
 
@@ -30,10 +31,10 @@
   <div class="collapse navbar-collapse" id="collapsibleNavbar">
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" href="#">Login</a>
+        <a class="nav-link" href="login.php">Login</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Signup</a>
+        <a class="nav-link" href="signup.php">Signup</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">About us</a>
@@ -73,11 +74,9 @@
                     <tr>
                       <td><?= $row['id']; ?></td>
                       <td><?= $row['First_name ']; ?></td>
-                      <td><?= $row['Last_name']; ?></td>
                       <td><?= $row['Email']; ?></td>
-                      <td><?= $row['Gender']; ?></td>
                       <td><?= $row['Hobby']; ?></td>
-
+                      <td><?= $row['Project-On-Work']; ?></td>
                     </tr>
                <?php } ?>
             </tbody>
